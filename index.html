@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Renata Bragança - Desenvolvedora front-end.</title>
+        <title>Renata Bragança | Desenvolvedora front-end.</title>
         <meta lang="pt-br"/>
         <meta charset="utf-8"/>
         <style type="text/css">
             .center {
+                border-radius: 10px;
                 color: #000;
                 font-family: "Raleway", sans-serif;
                 font-weight: 100;
@@ -17,10 +18,45 @@
                 top: 50%;
                 width: 500px;
             }
+            .bola1,
+            .bola2,
+            .bola3 {
+                z-index: -1;
+            }
+            .bola1 {
+                background: rgba(255, 255, 255, 0.2);
+                width: 300px;
+                height: 300px;
+                border-radius: 300px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -175px 0 0 -250px;
+            }
+            .bola2 {
+                background: rgba(255, 255, 255, 0.2);
+                width: 200px;
+                height: 200px;
+                border-radius: 200px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -100px 0 0 -40px;
+            }
+            .bola3 {
+                background: rgba(255, 255, 255, 0.2);
+                width: 150px;
+                height: 150px;
+                border-radius: 150px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -125px 0 0 100px;
+            }
             h1 {
                 font-size: 45pt;
                 margin: 0;
-                opacity: 0.7;
+/*                opacity: 0.7;*/
             }
             a {
                 color: #000;
@@ -32,7 +68,7 @@
                 -o-transition: all 0.6s ease;
                 -webkit-transition: all 0.6s ease;
                 transition: all 0.6s ease;
-                opacity: 0.5;
+                opacity: 0.4;
             }
             a:hover {
                 opacity: 1;      
@@ -70,14 +106,28 @@
                 background-image: url("https://cdn3.iconfinder.com/data/icons/picons-social/57/38-instagram-32.png");
             }
             body {
-                background: url("17.JPG") no-repeat center center;
-                background-size: cover;
+                background: url("20.JPG") no-repeat;
+                background-size: auto;
+            }
+            @media all and (max-width: 768px) {
+                body {
+                    font-size: 13px;
+                    background-position: center center;
+                }
+            }
+            @media all and (max-width: 768px) {
+                h1 {
+                    font-size: 40px;
+                }
             }
         </style>
         <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="center">
+            <div class="bola1"></div>
+            <div class="bola2"></div>
+            <div class="bola3"></div>
             <h1>Renata Bragança</h1>
             <p>Desenvolvedora front-end.</p>
             <ul class="links">
@@ -85,16 +135,16 @@
                     <a href="http://twitter.com/reb_lima" title="Meu Twitter" class="link_twitter"></a>
                 </li>
                 <li>
-                    <a href="http://facebook.com/reblima"tittle="Meu Facebook" class="link_facebook"></a>
+                    <a href="http://facebook.com/reblima"title="Meu Facebook" class="link_facebook"></a>
                 </li>
                 <li>
                     <a href="mailto:renata.braganca@live.com" title="Meu Email" class="link_email"></a>
                 </li>
                 <li>
-                    <a href="http://github.com/recomebono" tittle="Meu GitHub" class="link_github"> </a>
+                    <a href="http://github.com/recomebono" title="Meu GitHub" class="link_github"> </a>
                 </li>
                 <li>
-                    <a href="http://instagram.com/reblima1" tittle="Meu Instagram" class="link_instagram"></a>
+                    <a href="http://instagram.com/reblima1" title="Meu Instagram" class="link_instagram"></a>
                 </li>
             </ul> <!-- .links -->
         </div> <!-- .center -->
